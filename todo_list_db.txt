@@ -1,0 +1,5 @@
+CREATE  TABLE  tasks(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	title VARCHAR(100) NOT NULL,
+	status ENUM ('Pedente' , 'Concluida' ) DEFALT ' Pendente',
+	created_at DETETIME DEFAULT CURRENT_TIMESTAMP);
