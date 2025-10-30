@@ -8,7 +8,7 @@
 </head>
 <body> 
     <h1>Minha To do list</h1>
-    <form action = "add_task.php" metholder = "POST">
+    <form action = "add_task.php" method = "POST">
         <input type = "text" name = "title" placeholder = "Nova Tarefa..." required>
         <button type = "submit">Adicionar</button>
 </fom>
@@ -25,8 +25,8 @@
         echo "<li>";
         echo $row['status'] == 'concluída' ? "<s> {$row['title']}</s>" : $row['title'];
         echo "
-          <a hret= 'update_task.php?id={$row['id']}'>V</a>
-                    <a hret= 'update_task.php?id={$row['id']}'>L</a>";
+          <a hret= 'update_task.php?id={$row['id']}'>📝</a>
+                    <a hret= 'delete_task.php?id={$row['id']}'>❌</a>";
                     echo "</li>";
                     
       }
