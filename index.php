@@ -23,10 +23,10 @@
     if ($result->num_rows > 0){
       while ($row = $result->fetch_assoc()) {
         echo "<li>";
-        echo $row['status'] == 'concluída' ? "<s> {$row['title']}</s>" : $row['title'];
+        echo $row['status'] == 'concluida' ? "<s> {$row['title']}</s>" : $row['title'];
         echo "
-          <a hret= 'update_task.php?id={$row['id']}'>📝</a>
-                    <a hret= 'delete_task.php?id={$row['id']}'>❌</a>";
+          <a href= 'update_task.php?id={$row['id']}'>📝</a>
+                    <a href= 'delete_task.php?id={$row['id']}'>❌</a>";
                     echo "</li>";
                     
       }

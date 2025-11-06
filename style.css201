@@ -1,5 +1,5 @@
 body{
-    font-family:Arial,sans-serif;
+front-family:Arial,sans-serif;
     text-align: center;
     background: #dccff4; 
     padding: 20px;
@@ -39,4 +39,3 @@ a{
     margin-left: 10px;
     color: #655;
 }
-
